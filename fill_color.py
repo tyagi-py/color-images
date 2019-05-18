@@ -4,12 +4,12 @@ import argparse
 import os.path
 
 parser = argparse.ArgumentParser(description='Colorize GreyScale Image')
-parser.add_argument('--input', help='Path to image.')
+parser.add_argument('--input', help='Please give path to image')
 args = parser.parse_args()
 
 if args.input==None:
     print('Please give the input greyscale image name.')
-    print('Usage example: python3 colorizeImage.py --input greyscaleImage.png')
+    print('Usage example: python fill_color.py --input greyscaleImage.png')
     exit()
 
 if os.path.isfile(args.input)==0:
