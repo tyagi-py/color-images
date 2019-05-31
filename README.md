@@ -31,6 +31,9 @@ python fill_color.py --input /path/to/input/image
 ```
 output will be saved in same folder 
 
+## Model used:
+
+http://eecs.berkeley.edu/~rich.zhang/projects/2016_colorization/files/demo_v2/colorization_release_v2.caffemodel
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
