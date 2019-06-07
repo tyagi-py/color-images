@@ -47,7 +47,9 @@ img_lab_out = np.concatenate((img_l[:,:,np.newaxis],ab_dec_us),axis=2)
 img_bgr_out = np.clip(cv.cvtColor(img_lab_out, cv.COLOR_Lab2BGR), 0, 1)
 
 outputFile = args.input[:-4]+'_colored.png'
-cv.imwrite(outputFile, (img_bgr_out*255).astype(np.uint8))
+img_bgr_process =  (img_bgr_out*255).astype(np.uint8)
+cv.imwrite(outputFile, img_bgr_process )
+
 print('image saved as '+outputFile)
 
 
