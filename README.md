@@ -14,7 +14,14 @@ It uses Caffe (A Deep Learning framework) model and OpenCV.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install dependencies (numpy & OpenCV).
+To prevent the dependencies of this project from messing with your core python installation, you can create a [virtualenv](https://virtualenv.pypa.io/en/latest/).
+
+Now, use pip to install the dependencies using:
+```
+pip install -r requirements.txt
+```
+
+Now, we need to download the models, which can be done by the following:
 
 for linux:
 ```bash
